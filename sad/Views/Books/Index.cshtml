@@ -1,0 +1,25 @@
+﻿@model IEnumerable<sad.Models.Book>
+
+<h2>Список книг</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Год выпуска</th>
+            <th>Автор</th>
+            <th>Язык</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Year</td>
+                <td>@book.Author</td>
+                <td>@book.Language</td>
+            </tr>
+        }
+    </tbody>
+</table>

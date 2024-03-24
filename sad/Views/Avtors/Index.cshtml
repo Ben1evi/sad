@@ -1,0 +1,23 @@
+﻿@model IEnumerable<sad.Models.Avtor>
+
+<h2>Список авторов</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Год рождения</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var avtor in Model)
+        {
+            <tr>
+                <td>@avtor.Name</td>
+                <td>@avtor.LastName</td>
+                <td>@avtor.BirthYear</td>
+            </tr>
+        }
+    </tbody>
+</table>

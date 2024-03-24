@@ -1,0 +1,6 @@
+@sad_HostAddress = http://localhost:5287
+
+GET {{sad_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
